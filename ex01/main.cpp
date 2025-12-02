@@ -23,5 +23,8 @@ int main()
 	displayInfos(cat);
 	cat.guardGate();
 
+	dog.attack(cat.getName_());
+	cat.attack(dog.getName_());
+
 	return (0);
 }
