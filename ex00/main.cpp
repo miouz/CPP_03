@@ -30,6 +30,8 @@ int main()
 	dog.attack(cat.getName_());
 	dog.attack(cat.getName_());
 	dog.attack(cat.getName_());
+	dog.beRepaired(2);
+	displayInfos(dog);
 	dog.attack(cat.getName_());
 	displayInfos(dog);
 	displayInfos(cat);
