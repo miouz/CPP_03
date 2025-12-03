@@ -24,6 +24,8 @@ int main()
 	cat.attack(dog.getName_());
 	cat.highFivesGuys();
 	dog.highFivesGuys();
+	displayInfos(dog);
+	displayInfos(cat);
 
 	return (0);
 }
