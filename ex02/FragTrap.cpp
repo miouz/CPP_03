@@ -26,7 +26,13 @@ FragTrap::~FragTrap()
 
 void FragTrap::highFivesGuys(void)
 {
-	std::cout << "FragTrap " << name_ << " requests to get high at FiveGuys\n";
+	if (this->energyPoints_ > 0 && this->hitPoints_ > 0)
+	{
+		std::cout << "FragTrap " << name_ << " requests to have a positive high-fives\n";
+		energyPoints_--;
+	}
+	else
+	 	std::cout << "FragTrap " << this->name_ << " can not high-fives anymore ORZ\n";
 }
 
 void FragTrap::attack(const std::string& target)
